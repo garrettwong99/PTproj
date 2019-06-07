@@ -11076,6 +11076,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="GND2" library="supply" deviceset="GND" device=""/>
+<part name="GND3" library="supply" deviceset="GND" device=""/>
+<part name="SUPPLY9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11143,6 +11145,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY7" gate="G$1" x="226.06" y="180.34"/>
 <instance part="SUPPLY8" gate="G$1" x="231.14" y="180.34"/>
 <instance part="GND2" gate="1" x="246.38" y="175.26"/>
+<instance part="GND3" gate="1" x="91.44" y="116.84"/>
+<instance part="SUPPLY9" gate="G$1" x="91.44" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -11281,6 +11285,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="246.38" y1="180.34" x2="246.38" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="91.44" y1="119.38" x2="91.44" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P1.2"/>
+<wire x1="91.44" y1="121.92" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -11418,9 +11428,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="20.32" y="96.52"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="P1.2"/>
-<wire x1="114.3" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
-<label x="111.76" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="P1.1"/>
+<wire x1="114.3" y1="124.46" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
+<label x="111.76" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ADC2" class="0">
@@ -11586,6 +11596,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U4" gate="G$1" pin="VBATT"/>
 <wire x1="226.06" y1="180.34" x2="226.06" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
+<wire x1="91.44" y1="132.08" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P1.0"/>
+<wire x1="91.44" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
